@@ -1,0 +1,56 @@
+h1{
+  font-family: sans-serif;
+
+}
+p{
+  font-weight:600;
+  font-size:3em;
+}
+body{
+  font-size:16px;
+  background-color: rgb(25, 23, 146);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font_style{
+  font-style:oblique;
+  color: rgb(227, 252, 0);
+  text-align: center;
+  font-weight: bold;
+}
+ul{
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: rgb(2, 1, 0) underline;
+}
+.white-underline{
+  text-decoration: underline rgb(248, 248, 248) 5px;
+}
+li{
+  padding: 10px;
+}
+#li-yellow{
+  background-color: yellow;
+  color: black;
+}
+#li-red{
+  background-color: red;
+  color: black;
+}
+#li-brown{
+  background-color: rgb(82, 36, 36);
+  color: white;
+}
+#li-orange{
+  background-color: orange;
+  color: white;
+}
+#li-purple{
+  background-color: purple;
+  color: white;
+}
+#li-green{
+  background-color: green;
+  color: white;
+}
