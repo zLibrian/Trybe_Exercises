@@ -1,19 +1,137 @@
-*{
+ *{
   margin: 0;
   top: 0;
 }
 
 body{
-  background-color: rgb(29, 202, 29);
+  background-color: rgb(42, 86, 151);
+  border-radius: 20px;
 }
 
-#mainContent{
-  background-color: rgb(25, 87, 179);
+.mainContent{
+  background-color: rgb(20, 201, 50);
   width: 80%;
   margin-left: 10%;
+  font-size: 1.7em;
 }
 img{
-  width: 300px;
-  float: left;
-  margin: 20px 20px 15px 25px;
+  width: 500px;
+  margin: 20px 15px 25px;
+  border-radius: 30px;
+} 
+
+.imageRight{
+  width: 400px;
+  border-style: none;
+  float: right;
+  margin: 0 20px;
 }
+
+.header{
+  text-align: center;
+  color: white;
+  top: 0%;
+  padding: 20px;
+  background-color: rgb(154, 25, 172);
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 50px;
+}
+
+a:hover{
+  color: rgb(8, 184, 8);
+}
+
+.mainArticle h2{
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.mainArticle h3{
+  margin-top: 50px;
+  margin-top: 75px;
+  padding-bottom: 15px;
+}
+
+.tableAboutStomatopoda{
+  background-color: rgb(20, 23, 201);
+  text-align: center;
+  margin: 8% 0 55px 30% ;
+}
+
+.tableAboutStomatopoda td {
+  background-color: rgb(8, 143, 98);
+  align-items: center;
+  width: 280px;
+  height: 60px;
+}
+
+.factsSection p, h3{
+ background-color: rgb(218, 214, 15);
+ padding: 20px;
+ border-radius: 5px;
+}
+
+.factsSection img{
+  margin-top: 57px;
+  float: left;
+  border: solid  rgb(218, 214, 15);
+}
+
+.generalFeaturesSection{
+  background-color: rgb(8, 143, 98);
+}
+
+.generalFeaturesSection p{
+  margin-left: 20px;
+  padding-bottom: 25px;
+}
+
+.generalFeaturesSection img{
+  border: solid 3px rgb(0, 0, 0);
+}
+
+.curiositySection{
+  background-color: rgb(8, 143, 98);
+  margin: 50px 0;
+}
+
+.curiositySection img{
+  float: left;
+  margin-top: 0;
+  margin-right: 50px;
+  border: solid rgb(2, 131, 9);
+}
+
+.curiositySection li{
+  /* background-color: red; */
+  margin-top: 20px;
+  padding-bottom: 10px;
+  
+}
+
+.references{
+  background-color: rgb(218, 214, 15);
+  padding: 20px;
+  text-align: center;
+  margin-top: 150px; 
+}
+
+footer{
+  background-color: rgb(18, 200, 206);
+  text-align: center;
+  /* height: 100%; */
+  font-size: 25px;
+  margin-top: 20px;
+  padding: 15px;
+}
+
