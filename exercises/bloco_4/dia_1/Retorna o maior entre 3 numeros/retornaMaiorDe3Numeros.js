@@ -1,3 +1,5 @@
+// Retorna o maior valor entre 3 numeros
+
 let firstNumber = 100; 
 let secondNumber = 120;
 let thirdNumber = 160;
