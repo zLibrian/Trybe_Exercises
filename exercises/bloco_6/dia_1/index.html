@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Forms</h1:>
+      <p>Criando nosso primeiro formulário</p>
+  </header>
+  <main>
+    <section id="formSection">
+      <form action="" method="get" id="form">
+        <div>
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="labelNome">Nome
+              <input type="text" name="campoNome" id="labelNome" maxlength="40" required>
+            </label>
+            <label for="labelEmail">Email
+              <input type="email" name="campoEmail"id="labelEmail" maxlength="50" required>
+            </label>
+            <label for="CPF">CPF
+              <input type="number" name="campoCPF" id="CPF" maxlength="11" required>
+            </label>
+            <label for="city">Cidade
+              <input type="text" name="city" id="city" maxlength="20" required>
+            </label>
+            <label for="states">Estados
+              <select name="states" id="states" required>
+              </select>
+            </label>
+            <label>
+              <input type="radio" name="typeHouse" id="casa" checked>Casa
+            </label>
+            <label>
+              <input type="radio" name="typeHouse" id="Apartamento">Apartamento
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Experiencia Profissional</legend>
+            <label>Resumo Curriculum
+              <textarea name="" id="" cols="30" rows="10" required></textarea>
+            </label>
+            <label>Cargo
+              <input type="text" name="" id="" maxlength="40">
+            </label>
+            <label>Resumo Cargo
+              <input type="text" name="" id="" maxlength="500">
+            </label>
+            <label>Data
+              <input type="date" name="" id="">
+            </label>
+          </fieldset>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
