@@ -1,0 +1,200 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  padding: 20px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#hero{
+  background-image: url(./images/alice.png);
+  background-size:cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  width: 100%;
+  min-height: 100vh;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  color: white;
+  font-weight:bold;
+  font-size: 20px;
+  background-color: rgb(47, 0, 255) ;
+}
+
+#hero p, #hero h1{
+  font-size: 2em;
+  padding: 10px;
+  font-weight: 900;
+  color: black;
+  background-color: rgb(71, 233, 233);
+  text-align: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#hero p{
+  font-size: 1.5em;
+}
+
+
+#navHeader{
+  display: flex; 
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin: 10px;
+} 
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.aside{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto 10px;
+}
+
+.aside h2{
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2em;
+  color: white;
+}
+
+li:hover{
+  color: black;
+  background-color: white;
+}
+
+.botao {
+  background-color:  rgb(108, 20, 195);
+  border: none;
+}
+
+.listChapters{
+  display: none;
+}
+
+.listChapters li{
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.show{
+  display: block;
+  background-color: rgb(108, 20, 195);
+ font-size: 1.7em;
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  max-height: 1000px;
+  overflow: scroll;
+  margin-top: 30px;
+}
+
+.history{
+  background-color: rgba(237, 168, 81, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.history h1{
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.history p{
+  text-align: justify;
+  font-size: 2em;
+  padding: 20px 25px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgb(73, 30, 98);
+  color: white;
+  width: 100%;
+}
+
+.footer p{
+  font-size: 1.5em;
+  margin: 10px auto;
+}
+.footer h3{
+  font-size: 1.5em;
+  margin: 10px auto;
+}
+
+.paragraph{
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+@media screen and (min-width: 780px) {
+  #botao:hover {
+    opacity: 1;
+  }
+  
+  #header{
+    position: fixed;
+    padding: 0;
+    top: 0;
+  }
+
+  #hero h1{
+    font-size: 3em;
+  }
+
+  #hero p{
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body{
+    background-color: rgb(204, 198, 198);
+  }
+  .main-content{
+    overflow:visible ;
+    max-height: 100%;
+  }
+}
