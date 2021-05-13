@@ -63,8 +63,7 @@ const books = [
   },
 ];
 
-
-
+//Funcao que retorna o nome do autor de acordo com a idade que for passada via parametro
 function authorBornIn1947(books, birth) {
   return books.find((book) => book.author.birthYear === birth).author.name;
 }
