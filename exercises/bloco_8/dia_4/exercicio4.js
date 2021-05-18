@@ -76,12 +76,12 @@ const expectedResult = {
 // Modo que pensei usando reduce apenas para percorrer o array e pq foi pedido que usasse-mos ele.
 function longestNamedBook(books) {
   // escreva seu código aqui}
- return books.reduce((acc, book) => {
+ return books.reduce((acc) => {
     acc = (books.sort((book1, book2) => book1.name.length < book2.name.length)[0]);
     return acc;
   });
 }
-
+// Modo apresentado no gabarito... Realmente faz mais sentido que o meu ;( sadFace
 function longestNamedBook2() {
   return books.reduce((biggestBook, currentBook) => {
     if (currentBook.name.length > biggestBook.name.length) {
@@ -92,6 +92,6 @@ function longestNamedBook2() {
 }
 
 console.log(longestNamedBook(books));
-console.log(longestNamedBook2(books));
+console.log(longestNamedBook2());
 assert.deepStrictEqual(longestNamedBook(books), expectedResult);
-assert.deepStrictEqual(longestNamedBook2(books), expectedResult);
+assert.deepStrictEqual(longestNamedBook2(), expectedResult);
