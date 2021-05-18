@@ -74,12 +74,10 @@ const expectedResult = {
 };
 
 // Modo que pensei usando reduce apenas para percorrer o array e pq foi pedido que usasse-mos ele.
-function longestNamedBook(books) {
+function longestNamedBook(objectBooks) {
   // escreva seu código aqui}
- return books.reduce((acc) => {
-    acc = (books.sort((book1, book2) => book1.name.length < book2.name.length)[0]);
-    return acc;
-  });
+ return objectBooks.reduce(() => 
+ (books.sort((book1, book2) => book1.name.length < book2.name.length)[0]));
 }
 // Modo apresentado no gabarito... Realmente faz mais sentido que o meu ;( sadFace
 function longestNamedBook2() {
