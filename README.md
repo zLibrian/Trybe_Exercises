@@ -7,5 +7,3 @@
 ## Aqui na Trybe estarei aprendendo: Back-end, Front-end, Fundamentos de Desenvolvimento Web, soft-skills, metodologias ágeis e é claro, como trabalhar em equipe e ser mais produtivo. 
 
 ## Espero de coração que gostem e #VamoQueVamo
-
-- [ ] teste
