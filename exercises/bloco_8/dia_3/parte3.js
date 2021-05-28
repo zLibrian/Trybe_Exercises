@@ -111,5 +111,4 @@ function fantasyOrScienceFiction(books) {
   (book.genre === 'Fantasia' || book.genre === 'Ficção Científica'));
 }
 
-
 assert.deepStrictEqual(fantasyOrScienceFiction(books), expectedResult);
