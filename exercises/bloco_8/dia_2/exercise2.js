@@ -66,12 +66,12 @@ const books = [
 function smallerName(livros) {
   let nameBook;
   // console.log(!nameBook);
-  livros.forEach((value) =>{
-    if (nameBook === undefined || value.name.length < nameBook.length){
+  livros.forEach((value) => {
+    if (nameBook === undefined || value.name.length < nameBook.length) {
       nameBook = value.name;
     }
     return nameBook;
-  })
+  });
   // Podemos verificar se a diferenca de nameBook é igual a true e se for, atribuimos a ele um livro 
   // let nameBook;
   // // console.log(!nameBook);
