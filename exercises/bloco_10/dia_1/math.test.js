@@ -14,6 +14,7 @@ describe('Testa funcoes ./math', () => {
 
   test("Testa chamada, retorno e parâmetros passados para soma com entrada de dois valores", async () => {
     const mockSomar = jest.spyOn(math, "somar");
+    mockSomar.jest.implementaiton
     mockSomar.mockResolvedValue(5);
   
     mockSomar(2, 3);
