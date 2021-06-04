@@ -4,7 +4,10 @@ const fetchJoke = async () => {
      const response = await myFetch.json();
      const documento = document.getElementById('jokeContainer');
      documento.innerHTML = await response.joke;
-
 };
 
-fetchJoke();
+// fetchJoke();
+module.exports = { 
+  fetchJoke,
+  
+};

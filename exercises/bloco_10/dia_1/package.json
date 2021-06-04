@@ -2,14 +2,14 @@
   "name": "dia_1",
   "version": "1.0.0",
   "description": "",
-  "main": "searchEmployee.js",
+  "main": "math.js",
   "scripts": {
-    "test": "jest --watchAll"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.0.3"
+    "jest": "^27.0.4"
   }
 }
