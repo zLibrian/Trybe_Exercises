@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokedex header {
+  width: 80%;
+  border: 2px solid rgb(102, 0, 170);
+}
+
+.pokedexBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.pokeChart{
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 90%;
+  background-color: rgb(255 202 3);
+  border: 2px solid rgb(28, 4, 71);
+  border-radius: 6px;
+  margin: 2%;
+  flex-basis: 80%;
+}
+/* rgb(51 104 176); */
+
+.pokeChart img {
+  background-color: rgb(51 104 176);
+  width: 50%;
+}
+
+.pokeCard {
+  width: 50%;
+  align-self: center;
+  
+}
+
+.pokeCard p {
+  font-size: 1.2em;
+  margin: 3%;
+  padding: 2%;
+  text-align: center;
+}
+
+.pokedex header {
+ font-size: 2.2em;
+ text-align: center;
+ padding: 2%;
+ margin: 3%;
+ background-color: rgb(51 104 176);
+ color: rgb(255 202 3);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: rgb(251, 252, 255);
+  }
+  .pokeChart {
+    flex-basis: 30%;
+  }
+
+  .pokeCard p {
+    font-size: 1.5em;
+  }
+
+  .pokedex h1 {
+    font-size: 2.5em;
+  }
+  .pokedex header {
+    width: 100%;
+    min-height: 70vh;
+    border: 1px solid rgb(168, 159, 173);
+    border-radius: 8px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png');
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .pokedex header h1 {
+    display: none;
+  }
+}
