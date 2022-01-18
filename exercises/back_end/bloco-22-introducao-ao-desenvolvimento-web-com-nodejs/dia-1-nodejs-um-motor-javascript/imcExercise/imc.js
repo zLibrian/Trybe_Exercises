@@ -10,7 +10,9 @@ const showUserIMC = () => {
 
   const userIMC = calculateIMC(weight, height);
   const imcClassification = checkIMCSituation(userIMC);
-  return `Hello, ${name}, seu IMC é de ${userIMC} e é classificado como ${imcClassification}`;
+  const message = (
+    `Hello, ${name}, seu IMC é de ${userIMC} e é classificado como ${imcClassification}`); 
+  return message;
 };
 module.exports = {
   calculateIMC,
