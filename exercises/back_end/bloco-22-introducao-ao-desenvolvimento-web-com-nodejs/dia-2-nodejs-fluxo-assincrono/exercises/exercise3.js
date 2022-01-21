@@ -10,8 +10,8 @@ const main = async () => {
     const result = await recebeNumero(num1, num2, num3);
     console.log(result);
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
-}
+};
 
 main();

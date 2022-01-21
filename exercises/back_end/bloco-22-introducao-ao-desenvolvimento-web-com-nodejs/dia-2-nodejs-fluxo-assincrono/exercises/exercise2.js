@@ -1,8 +1,8 @@
-const { recebeNumero } = require('./exercise1')
+const { recebeNumero } = require('./exercise1');
 
 const geraNumeroAleatorio = (rangeMaximo) => {
-  if (typeof(rangeMaximo) !== 'number') return 'Valor inválido!'
-return Math.floor(Math.random() * rangeMaximo + 1)
+  if (typeof (rangeMaximo) !== 'number') return 'Valor inválido!';
+return Math.floor(Math.random() * rangeMaximo + 1);
 };
 
 const num1 = geraNumeroAleatorio(1);
@@ -16,3 +16,6 @@ recebeNumero(num1, num2, num3)
 module.exports = {
   geraNumeroAleatorio,
 };
+
+const randomNumbers = Array.from({ length: 3 }).map(() => `O valor é ${geraNumeroAleatorio(100)}`);
+console.log(randomNumbers);
