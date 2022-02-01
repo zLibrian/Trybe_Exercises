@@ -24,35 +24,53 @@ const handleGetDrinkById = (req, res) => {
   return res.status(200).json(drink);
 };
 
-const handleGetBySearch = (req, res) => {
+const handleGetRecipeBySearch = (req, res) => {
   const { name, maxPrice } = req.query;
-  if (!name && !maxPrice) return res.status(404).send('Produto nao encontrado');
-  const filteredRecipes = recipes.filter((r) => r.name.includes(name) && r.price <= parseInt(maxPrice));
+  const filteredRecipes = recipes.filter((r) => (
+    r.name.toLowerCase().includes(name.toLowerCase())
+    && r.price <= parseInt(maxPrice, 10)
+  ));
   res.status(200).json(filteredRecipes);
 };
 
 const handleGetRecipesById = (req, res) => {
   const { id } = req.params;
   const recipe = recipes.find((r) => r.id === parseInt(id, 10));
-  if (!recipe) return res.status(404).send('Bebida nao encontrada');
+  if (!recipe) return res.status(404).send('Receita nao encontrada');
   res.status(200).json(recipe);
 };
 
+const handleGetDrinkByName = (req, res) => {
+  const { name } = req.query;
+  const filtereDrink = drinks.filter((drink) => drink.name.includes(name));
+  res.status(200).json(filtereDrink);
+};
+
+const validatePrice = (req, res, next) => {
+  const { price } = req.body;
+  if (typeof (price) !== 'number' || price < 0) {
+    return res.status(404).json({ message: 'Invalid data!' });
+  }
+  next();
+};
 app.get('/drinks', handleGetDrinks);
+app.get('/drinks/search', handleGetDrinkByName);
+app.get('/drinks/:id', handleGetDrinkById);
+
+app.get('/recipes/search', handleGetRecipeBySearch);
 app.get('/recipes/:id', handleGetRecipesById);
-app.get('/recipes/search', handleGetBySearch);
 app.get('/recipes', handleGetRecipes);
-app.get('/drink/:id', handleGetDrinkById);
 
 // ...
 
-app.post('/recipes', (req, res) => {
-  const { id, name, price, waitTime } = req.body;
-  recipes.push({ id, name, price, waitTime });
+app.post('/recipes', validatePrice, (req, res) => {
+  const { name, price, waitTime } = req.body;
+  const newId = recipes[recipes.length - 1].id + 1;
+  recipes.push({ newId, name, price, waitTime });
   res.status(201).json({ message: 'Recipe created successfully!' });
 });
 
-app.post('/drinks', (req, res) => {
+app.post('/drinks', validatePrice, (req, res) => {
   const { id, name, price } = req.body;
   drinks.push({ id, name, price });
   res.status(201).json({ message: 'Bebida adicionada com sucesso' });
