@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './pokemonStyle.css';
 class Pokemon extends Component {
   render() {
-    const { name, type, image, averageWeight: {value, measurementUnit} } = this.props.pokemon;
+    const { name, type, image, averageWeight: { value, measurementUnit } } = this.props.pokemon;
     return (
       <div className="pokeChart">
         <div className="pokeCard">
